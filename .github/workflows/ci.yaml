@@ -117,7 +117,7 @@ jobs:
         run: |
           make unit-tests-race
       - name: coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           files: _out/coverage.txt
           token: ${{ secrets.CODECOV_TOKEN }}
